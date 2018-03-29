@@ -3,7 +3,7 @@
 cd $(rospack find robot_tutorial_1)/urdf
 rosrun xacro xacro wheely_boi.xacro > wb.urdf
 
-x-terminal-emulator -e roslaunch robot_tutorial_1 play.launch
+x-terminal-emulator -e roslaunch gazebo_ros empty_world.launch 
 
 rosrun gazebo_ros spawn_model -file wb.urdf -urdf -model wheely_boi
 
